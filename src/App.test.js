@@ -1,6 +1,4 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import { getPosts } from './App';
+import App from './App';
 
 import axios from 'axios';
 
@@ -47,8 +45,8 @@ describe('getPosts', () => {
     };
 
     axios.get.mockImplementationOnce(() => Promise.resolve(data));
-    await expect(getPosts()).resolves.toEqual(data);
-    expect(axios.get).toHaveBeenCalledWith(apiUrl);
+    await expect(App.getPosts()).resolves.toEqual(data);
+    expect(axios.get).toHaveBeenCalledWith(App.apiUrl);
   });
 });
 
