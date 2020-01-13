@@ -1,10 +1,14 @@
 # Capacity Posts
 
-This project was bootstrapped with
 Contains the following :  
 • simple and reusable components
 • a clean layout styled with css
 • clear error messages and validations
+
+## NPM install
+
+you will need to run  
+npm install in order to get all dependencies and node modules. Then you will be able to run the following scripts
 
 ## Available Scripts
 
